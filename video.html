@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>POEMA ABUTRE&copy;</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="https://fonts.googleapis.com/css?family=Merriweather|Special+Elite&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Special Elite', cursive;
+  font-size: 17px;
+   }
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+pre {
+  display: block;
+  font-family: 'Special Elite', cursive;
+  white-space: pre;
+  margin: 1em 0;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#audio {height: 25px; width:200px;}
+
+</style>
+<!--=======BLOQUEIO========-->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-147383817-1');
+</script>
+<script>
+function mensagem(){
+    alert('Todos Direitos Reservados!');
+    return false;
+}
+ function bloquearCopia(Event){
+    var Event = Event ? Event : window.event;
+    var tecla = (Event.keyCode) ? Event.keyCode : Event.which;
+    if(tecla == 17){
+        mensagem();
+	}
+}
+</script>
+<script>
+	document.onkeypress = bloquearCopia;
+	document.onkeydown = bloquearCopia;
+	document.oncontextmenu = mensagem;
+</script>
+
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content"><div align="center">
+  <h1>Poema Abutre ou O Dia em que a Morte de UM Será Tragédia</h1>
+<h2><a href="https://escrevoaovivo.com" target="_blank">Anizio Vianna</a>&copy;</h2>
+<pre>
+	No céu da página
+	Este poema abutre
+	Este poema astuto
+	A morte se faz necessária agora
+
+        No céu da morte
+        Este poema página
+        Este poema agora
+        O astuto se faz necessário abutre
+
+        No céu do poema
+        Esta página abutre
+        Esta página agora
+        A morte se faz abutre astuto
+
+        O poema se faz necessário agora
+        Esta morte astuta
+        Esta morte abutre
+        No céu da página
+</pre>
+<br/>
+<audio controls id="audio">    
+<source src="PoemaAbutre.mp3"> You will see this text if native audio playback is not supported. </audio> </div>
+Fonte: Vozes da Comunidade 
+</body> 
+</html>
